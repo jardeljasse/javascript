@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>object | J.S</title>
+</head>
+	<body>
+		<h1>OBJECTS IN JavaScript</h1>
+		<hr width='80%'>
+		<p id='mult'></p>
+		
+	<script>
+			
+			const jasseFamily = {
+			father:"Jeremias Jasse", 
+			wife:"Flora Samuel",
+			oldSon:"Jardel Jasse",
+			allFamily: function(){
+					return this.oldSon + " " + this.wife
+				}
+			}
+			
+			//document.write(jasseFamily['father'])
+			document.write(jasseFamily.allFamily())
+			
+	</script>
+	</body>
+</html>

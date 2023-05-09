@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Function | J.S</title>
+</head>
+<body>
+	
+	<h1>OBJECTOS EM JavaScript com Sublime</h1>
+	<hr width='80%'>
+	
+	<script>
+		//OBJECTOS 
+
+		const carro = {
+			marca: 'Toyota',
+			matricula: 'ABC12',
+			//velocidade: '240',
+			valor: 500000,
+			combustivelFull: true,
+			acelerar: function (velocidadeAct) {
+				document.write(' ,velocidade Act actual '+velocidadeAct+ ' km/h'+ ' pelas '+Date())
+			},
+			travar: () => {
+				document.write('TRAVAR')
+			},
+			derapar: () =>{
+				document.write('DERAPAR')
+			}
+		}
+
+		//document.write(carro.acelerar());
+		
+		/*if(carro.combustivelFull === true){
+			document.write('O carro tem combustivel');
+			carro.acelerar(200)
+		}else{
+			document.write('o carro esta sem combustivel')
+		}*/
+		//carro.acelerar();
+		carro.licenca = true;
+		//Modificando uma PROPRIEDADE JA EXISTENTE
+		carro.marca = 'BMW-BCC-2012'
+		//CRIANDO NOVA PROPRIEDADE FORA DA DECLRACAO MAE
+		carro.modelo = 'dupla cabine'
+		//REMOVENDO UMA PROPRIEDADE
+
+		//delete carro.marca;
+
+		//DELETANDO UM METODO
+		delete carro.travar;
+		//document.write(carro.acelerar())  
+		//carro.travar();
+
+		//ADICIONANDO UM METODO
+
+		carro.ativarEscape = function(velMin, velAct){
+			barrulho = velMin + velAct 
+			return barrulho
+		}
+
+		document.write(carro.ativarEscape(40,70));
+
+
+	</script>
+	
+</body>
+</html>

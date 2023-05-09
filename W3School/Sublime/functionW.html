@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Function | J.S</title>
+</head>
+<body>
+	
+	<h1>FUNCOES EM JavaScript com Sublime</h1>
+	<hr width='80%'>
+	<input type='submit' onclick='welcome()' name='saudar' id='isaudar' value='Quero Sauadar-te'>
+	<p id='saudacao'>Ola &#x1f490;</p>
+	<p class='laliga' id='llg'>Classificacao da Laliga</p>
+	<p class='car'>Cars</p>
+
+
+
+
+	<script>
+	
+	nome = "Jardel Jeremias Jasse"
+	document.write(nome.toUpperCase())
+	//nome.charAt(0) => retorna o primeiro carater
+	//nome.charAt(nome.length - 1) => retorna o ultimo carater
+	//nome.slice(-3) => retorna os ultimos 3 carateres
+	//o metodo 'charAt()' pode ser substituido por '[]', usando deste modo a semantica dos Arrays
+
+	document.write(nome[1])
+
+	
+
+
+	//let classfLaliga = ['Barcelona', 'At Madrid', 'R Madrid', 'R Sociedade']
+
+	//document.write(classfLaliga.sort())// usando o metodo 'sort()'
+
+	/*function laligaClassif(){
+		let cont = 0
+		do{
+			document.write('<br>'+classfLaliga[cont])
+			cont++
+		}while(cont < classfLaliga.length)
+	}
+
+	//const elLaliga = document.querySelectorAll(".laliga");
+	const elLaliga = document.getElementById('llg');
+	//elLaliga.textContent += laligaClassif();
+
+
+	const welcome = () => {
+		let escreverNome = prompt('Qual seu nome?');
+		const elSaudacao = document.getElementById('saudacao');
+		elSaudacao.textContent += escreverNome + ' Seja bem vindo!';	
+	}
+
+	//welcome();	
+	const car = {
+		door: '4 ways',
+		janela: 4,
+		dateBought: Date()
+	}
+
+	console.log('the car was buy at' + ' ' + car.dateBought);
+	car.engine = 'turbo 6000';
+	//document.write(car.engine)*/
+	</script>
+	
+</body>
+</html>

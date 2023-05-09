@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaScript | 2017</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The PadStart() Method</h2>
+
+    <p>The PadStart() method pads a string fron the start.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "Jasse"
+        var name = 8 
+        if(name % 2 != 0){
+            document.write('"Par" ' + 'O valor e '+name)
+        }else{
+            document.write('Impar' +name)
+        }
+
+        text = text.padStart(16,' Jardel');
+        document.getElementById('demo').innerHTML = text + " "+name
+        
+
+    </script>
+
+</body>
+</html>

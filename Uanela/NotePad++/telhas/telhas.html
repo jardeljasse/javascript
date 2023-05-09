@@ -1,0 +1,100 @@
+<!DOCYTP html>
+<html lng='eng'>
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content='width=device-width, initial-scale=1.0'>
+	<title>Vendas de Telhas | Dolar</title>
+	<link rel='shortcut icon' href='icon/dollar.ico' type='image/x-icon'>
+	<style>
+	
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: darkcyan;
+			font-family: Arial, Helvitica, sans-serif;
+		}
+		table{
+			border-collapse: collapse;
+			margin: auto;
+			border: solid 2px cyan;
+			width: 50%;
+		}
+		td{
+			border: solid 1px black;
+			padding: 5px;
+		}
+		td:nth-child(2n){
+			background-color: darkcyan;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		td:nth-child(2n+1){
+			background-color: darkwhite;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		td:last{
+			background-color: red;
+		}
+		h1{
+			color: black;
+			font-weight: bold;
+			background-color: lightcyan;
+			margin: 5px 10px;
+			border-radius: 3px;
+			padding: 4px;
+		}
+		div#saudacoes{
+			margin-top: 50px;
+			/*argin-bottom: 20px;*/
+		}
+		div#conteiner{
+			background-color: lightcyan;
+			margin: 20px 10px;
+			padding: 20px;
+			border-radius: 10px;
+		}
+		div#saudacoes{
+			text-align: center;
+			padding-bottom: 10px;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	
+	<h1>Arte no Ar</h1>
+	<div id='conteiner'>
+		<div id='saudacoes' class='mensagem'>Ola! </div>
+		
+		<table>
+			<tr>
+				<!-- <thead>Tipo de Letreiro disponiveis</thead> -->
+				<td>Sinal Personalizado</td>
+				<td id='sinalUsuario'></td>
+			</tr>
+			<tr>
+				<td>Telhas Totais</td>
+				<td id='telhas'></td>
+			</tr>
+			<tr>
+				<td>Subtotal</td>
+				<td id='subTotal'>$</td>
+			</tr>
+				<td>Envio</td>
+				<td id='envio'>$</td>
+			<tr>
+			<tr>
+				<td>Total Geral</td>
+				<td id='totalGeral'>$</td>
+			</tr>
+		</table>
+		<a href='#' title="Tem que pagar">Pay Now</a>
+		
+	</div>
+	<script src='script.js'></script>
+</body>
+</html>

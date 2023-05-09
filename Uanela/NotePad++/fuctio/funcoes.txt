@@ -1,0 +1,26 @@
+
+FUNCAO => permitem AGRUPAR uma serie de DECLARACOES que executam uma determinada
+	  tarefa.
+
+(*) Para declarar uma funcao em JavaScript, utiliza-se a palavra reservada 
+	('function')
+
+Ex: function nomeDaFuncao(){
+		tarefa que se pretende executar
+	}
+function escrever(){
+	document.write('Parabens sua Primeira Funcao e JavaScript')
+}
+
+ARROW FUNCTION
+Esta e uma funcao de seta, e declara-se utilizando uma variavel
+
+Ex: const nomeDaFuncao = (possiveis parametros) =>{
+	tarefa a ser executada
+} 
+
+------------------------------------------
+
+(*) Para chamar a Funcao, basta chamar o seu nome com seu parametro caso exista.
+
+Ex: nomeDaFuncao();, no nosso caso seria:	

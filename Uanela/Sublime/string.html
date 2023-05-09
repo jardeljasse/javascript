@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const nome = 'Maysa';
+
+		let nrLetra = Number(prompt('Maysa'));
+
+		//alert(nrLetra += nrLetra);
+
+		//quantas letras a palavra possui?
+		if(nrLetra == nome.lenght){
+			//document.write('a palavra tem '+ nome.length+' letras')	
+			alert('ACERTOU, a palavra tem '+ nome.length+' letras')	
+		}else{
+			alert('Errou!')
+		}
+		//Qual a primeira letra?
+		//document.write('<br>a primeira letra e: '+ nome[0]+ '<br>')
+		//Qual a ultima letra?
+
+		document.write('<br>a ultima letra: '+ nome.charAt(nome.length - 1));
+	</script>
+</body>
+</html>

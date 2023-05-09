@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Function | J.S</title>
+</head>
+	<body>
+		<h1>FUNCOES EM JavaScript</h1>
+		<hr width='80%'>
+		<p id='mult'></p>
+		<script>
+			
+			/*Fucoes permitem AGRUPAR uma serie de DECLARACOES
+			  que executam uma tarefa especifica*/
+			  
+			//Declarando uma funcao
+			function $imprimirNaTela(){
+				document.write('Minha Primeira Funcao')
+			}
+			$imprimirNaTela();//chamando a funcao criada
+
+			/*const multiplicacao = (nr1, nr2) => {
+				return nr1 * nr2;
+			}
+			document.getElementById('mult').textContent = multiplicacao(4, 9);*/
+			
+			//Calculating Fahrenhit para graus Celsius
+			
+			function toCelscius(faranheto){
+				return (5/9) * (faranheto - 32)
+			}
+			document.getElementById('mult').innerHTML = toCelscius();
+			
+			//toCelscius e o objecto da funcao e toCelscius() resultadado da funcao
+			
+		</script>
+	</body>
+</html>

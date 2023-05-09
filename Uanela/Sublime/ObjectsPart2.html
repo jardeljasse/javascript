@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Function | J.S</title>
+</head>
+<body>
+	
+	<h1>OBJECTOS EM JavaScript parte II</h1>
+	<h2>Metodo construtor</h2>
+	<hr width='80%'>
+
+	<div class='elemento' style='color: darkgray;'>ola</div>
+	<div id='hi' class='elemento' style=' color: green'>Hi</div>
+	<div class='elemento' style='color: blue'>Tudo bom?</div>
+	
+	<script>
+		//criado um meitodo construtor de carros
+
+		
+		function formulaDeCarros(marca, matricula, preco, tanqueCheio, velocidade) {
+			this.marca = marca;
+			this.matricula = matricula;
+			this.preco = preco;
+			this.tanqueCheio = tanqueCheio;
+			this.acelerar = (velocidade) => {
+				document.write('a acelerar a '+ velocidade +' km/h ');
+			};
+			this.travar = () =>{
+				document.write('travar!');
+			}
+		}
+
+		//criando carro-Toyota
+		const carroToyota = new formulaDeCarros('Toyota', 'AAX706MP', 180000, true, 180);
+		//document.write(carroToyota.matricula);
+
+		//criando carro-BMW
+		const carroBmw = new formulaDeCarros('BMW', 'AEZ546MC', 300000, false, 280);
+		// adicionando um elemento ao carro Bmw
+		carroBmw.modelo = '4 portas';
+		delete carroBmw.modelo;
+		//document.write(carroBmw.matricula);
+
+		//adicionando uma funcao a carroToyota
+		carroBmw.derapar = function(){
+			//document.write('DANDO DRIFTS!');
+		}
+		//document.writeln(carroBmw.derapar());
+
+		//OBJECTOS EMBUTIDOS NO 'WINDOW'
+		/*window.print('ola jardel');// para imprimir a tela
+		window.prompt('insira seu nr de telefone')
+		window.confirm('Este e o seu nome?');*/
+
+		//OBJECTOS EMBUTIDOS NO 'DOCUMENT'
+
+		//document.write(document.title);//Escreve o nome do titulo alocado no cabecalho 
+ 
+		/*const elElemento = document.getElementsByClassName('elemento')[0];
+		elElemento.textContent += ', Ja estou sendo optimo no JavaScript';*/
+
+		const elElemento = document.querySelectorAll('.elemento')[1];
+		elElemento.textContent = 'Welcome to my City!'
+
+		//CCRIANDO ELEMENTO APARTIR DO 'createElement()'
+
+		const novoElemento = document.createElement('p');
+		//para demosntrar que o elemento foi adicionado devemos selecionar a tag 'body'
+
+		document.body.append(novoElemento);
+		// este elemento adicionado aparece no final da nossa tag <script> e devemos usar o comando 'append()' para adicionar o elemento a variavel criada.
+
+
+	</script>
+	
+</body>
+</html>

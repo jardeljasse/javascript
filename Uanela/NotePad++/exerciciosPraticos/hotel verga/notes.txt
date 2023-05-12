@@ -1,0 +1,12 @@
+
+~~~funcoes auto invocadas~~~
+	usadas no caso de  um programador ter desenvolvido o seu codigo e chega outro
+	para a continuacao do mesmo projeto, entao para que nao haja a colisao de nomes das
+	variaveis ou funcoes normalmente adopta-se o metodo designado por FUNCOES AUTO INVOCADAS
+
+EX: (function(){
+
+	})()
+No ultimo parametro =>[estamos chamando a nossa funcao automaticamente]
+
+NB: the CONSTRUCTOR METHOS does not allow to be built with a ROW FUNCTION STATEMENT

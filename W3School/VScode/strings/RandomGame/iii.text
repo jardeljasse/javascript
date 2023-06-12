@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <script>
+      var sorteados = [];
+
+      function gerar() {
+        var min = parseInt(document.getElementById("min").value);
+        var max = parseInt(document.getElementById("max").value);
+
+        try {
+          while (true) {
+            var num = ((Math.random() * 10000) % max).toFixed(0);
+
+            if (num >= min && num <= max && !sorteados.includes(num)) {
+              document.getElementById("numero").innerText = num;
+              document.getElementById(
+                "sorteados"
+              ).innerHTML += `<tr><td>${num}</td></tr>`;
+
+              sorteados.push(num);
+              console.log(num);
+              break;
+            }
+            if (sorteados.length >= max) {
+              console.log("Acabou");
+              break;
+            }
+          }
+        } catch (ex) {
+          console.log(ex);
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <a
+      href="https://meucodigo-3bb8d.web.app/PT-BR-Javascript-Numeros%20Aleat%C3%B3rios%20Inteiros"
+    >
+      Como fazer?
+    </a>
+    <table
+      style="padding: 10px; text-align: center; margin: auto; width: 30%; background-color: aqua; border-radius: 10px;"
+    >
+      <tr>
+        <td>
+          <input
+            type="number"
+            value="1"
+            id="min"
+            style="width: 4em; padding: 3px;"
+          />
+          <input
+            type="number"
+            value="23"
+            id="max"
+            style="width: 4em; padding: 3px;"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button
+            onclick="gerar()"
+            style="padding: 7px; padding-left: 14px; padding-right: 14px;"
+          >
+            GERAR!
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <br />
+    <div
+      id="numero"
+      style="background-color: rgb(0, 180, 180); border: 2px solid aqua; color: white; font-size: 45px; margin: auto; text-align: center; width: 100px; height: 100px; line-height: 100px; border-radius: 50%;"
+    ></div>
+    <br />
+    <table
+      id="sorteados"
+      style="text-align: center; margin: auto; width: 30%; background-color: aqua; border-radius: 10px;"
+    ></table>
+  </body>
+</html>

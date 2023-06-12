@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Objects</title>
+</head>
+<body>
+    <h1>Date Objects</h1>
+
+    <h3>new Date()</h3>
+    <p><span id="example"></span></p>
+    
+    <h3>new Date(year, month)</h3>
+    <p><span></span></p>
+    <script>
+        /*In JavaScript the date objecrs are STATIC, the clock isn't running.
+        But the computer clock is ticking, 
+        
+        Exist nine(9) form to create Date Objetcs!
+        */
+
+        /*
+            1.new Date()
+            2.new Date(date string)
+            3.new Date(year, month)
+            4.new Date(year, month, day)
+            5.new Date(year, month, day, hours)
+            6.new Date(year, month, day, hours, minutes)
+            7.new Date(year, month, day, hours, minutes, seconds)
+            8.new Date(year, month, day, hours, minutes, seconds, ms)
+            9.new Date(milliseconds)
+        */
+
+        //const d = new Date();
+        const elExample = document.querySelector("#example")
+        const elExample2 = document.getElementsByTagName('span')[1]
+        
+        /*new Date(date string) creates a object from DATE STRING*/
+        //const dateString = new Date('June 03, 2022')
+        const dateString = new Date('2023-06-13')
+        elExample.textContent = dateString;
+        /*YEAR MONTH*/
+
+        const yearMonth = new Date(2023, 03, 18, 14, 54, 31, 50)//that 7 numbers represents respectly: YEAR, MONTH (start on 0-11, where 0=> January and so on), DAY, HOURS, MINUTES, SECONDS AND MILLISECONDS
+        //document.write(yearMonth)
+        //elExample2.textContent = yearMonth;
+        //to PREVIOUS CENTURY, only put one and ywo digit
+
+        const centuryYear = new Date(98, 02)
+        //document.write(centuryYear)
+
+        //Milliseconds
+        var milliseconds = new Date(100000000000)
+        let milliseconds1 = new Date((24*7) * 60 * 60 * 1000)
+        document.write(milliseconds1)
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h2>String</h2>
+
+    <p class="answer">Using quotes inside Strings</p>
+    <p class="test"></p>
+    <script>
+
+       //using quotes inside string 
+       let answer1 = " it's nice"
+       let answer2 = " He is called 'Jonhny'" 
+       let answer3 = ' <strong>He is called "Jonhny</strong>'
+       //STRING LENGTH /**/
+        /*to find the length of string, it used 'length - propriety'*/
+        const abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        //document.write(abc.length)
+
+        /*CASPE CHARACTER*/
+
+        let Biblea = "\'God's Word\', the only truth way to be saved"
+        let Bibleaa = "It\'s \"alright\""
+        let Bibled = "It is \\ alright"
+        let Bible = "It is \ alright you know"
+
+        //document.write(Bible)
+
+        /*STRINGS AS OBJECTS
+        can be defined as object with the keyword 'new'
+        TIP: --DON'T RECOMMEND TO USE STRINGS OBJECTS--*/
+
+        let name = 'Jardel'
+        let declaredName = new String('Jardel')
+        let declaredName2 = new String('Jardel')
+        //document.write(declaredName)
+         //document.write(typeof(declaredName))
+
+        if(declaredName2 === declaredName){
+            document.write(true)
+        }else{
+            document.write('it\'s not igual because variable \"name\" is a '+ typeof(declaredName2) + ' and variable \"declaredName\" is '+ typeof(declaredName))
+        }
+
+    </script>
+    
+</body>
+</html>

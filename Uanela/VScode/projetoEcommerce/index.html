@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce | 2023</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav-bar show-menu">
+        <div class="header-inner-content">
+            <h1 class="logo">BLUE<span>STORE</span></h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Productos</li>
+                    <li>Sobre</li>
+                    <li>Contactos</li>
+                    <li>Conta</li>
+                </ul>
+            </nav>
+            <!--adicionando o carinho de compra e Menu-->
+            <div class="nav-icon-container">
+                <img src="images/cart.png" alt="cart">
+                <img src="images/menu.png" alt="Menu" class="menu-button">
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-inner-content">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <h2>Deia um Novo Estilo ao seu Trabalho!</h2>
+                    <p>Sucesso nem sempre tem haver com grandeza. Tem haver com consistencia.
+                        Trabalho duro consistente supera o sucesso. A grandeza vira.
+                    </p>
+                    <button>Ver agora &#8594;</button>
+                </div>
+                <div class="header-bottom-side-right">
+                    <img src="images/gaming-msi-header.png" alt="Gaming, nao encontrado">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Content-->
+    <main>
+        <div class="gray-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3 ">
+                    <img src="/images/products/product-1.png" alt="">
+                    <img src="/images/products/product-2.png" alt="">
+                    <img src="/images/products/product-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const elNavBar = document.querySelector('.nav-bar')
+        const elMenuButton = document.querySelector('.menu-button') 
+
+        elMenuButton.addEventListener('click',  () => {
+            elNavBar.classList.toggle('show-menu') //alternado o 'nav-bar' para o 'show-menu'
+        })
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

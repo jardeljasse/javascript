@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Search Methods</title>
+</head>
+<body>
+    <h1>String Search Methods</h1>
+    <ul type="circle">
+        <!--<li>indexOf()</li>
+        <li>lastIndexOf()</li>
+        <li>search()</li>
+        <li>match()</li>
+        <li>matchAll()</li>
+        <li>includes()</li>
+        <li>startsWith()</li>
+        <li>endsWhith()</li>-->
+    </ul>
+    <p id="example"></p>
+    <script>
+        /*
+        indexOf('position')
+            NOTE: if the text is not found it return '-1'
+        */
+        let txt = 'Let\'s start learn Search Methods of Strings'
+        let index = 'Please locate where \'locate\' occurs'
+
+        const elExample = document.querySelectorAll('p')[0]
+        //elExample.textContent = txt.indexOf('start')
+        elExample.textContent = index.lastIndexOf('locate', 15)
+        document.write(index.charAt(7))
+
+
+    </script>
+</body>
+</html>

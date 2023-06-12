@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h2>String Methods</h2>
+    <p id="example"></p>
+    
+    <script>
+        const abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        const text = 'Apple, Banana, Kiwi'
+        const text2 = 'Please visit Microsoft!'
+        const elExample = document.getElementsByTagName('p')[0]
+        
+        
+        /*Minim exist 'seventeen' String Methods*/
+
+        /*EXTRACTING STRING PARTS
+            1. slice(start, end)
+                NOTE: omiting the second parameter, will slice out the rest of the string
+            2. substring(start, end)
+            3, substr(start, length)
+                NOTE: but the 'length' will appear as number*/
+
+            //elExample.textContent = text.slice(7, 13)
+            //elExample.textContent = text.substring(7, 13)
+            //elExample.textContent = text.substr(0, 6)
+        
+        /*REPLACING STRING CONTENT
+            1. replace()
+                NOTE: *the replace() method only return the first match, to return all should use "/g" 
+                * it's case sensitive, to replace case insensitive should use "/word to replace/i
+        "*/
+        const text3 = 'Please visit Microsoft'
+        
+        //elExample.textContent = text3.replace("Microsoft/g", 'W3ESchools')
+        //elExample.textContent = text3.replace(/MICROSOFT/i, 'W3ESchools')
+
+        /*STRING IN UPPERCASE AND LOWERCASE
+            1.toUpperCase()
+            2.toLowerCase()
+        */
+       //elExample.textContent = text2.toLowerCase()
+
+        /*CONCAT STRING
+        to concat string should use mmethod'concat()'*/
+        //elExample.textContent = text3.concat(' ', 'New Year \'to build new hearts\'')
+        
+        /*JAVA SCRIPT TRIM()
+        1.trim()
+            IT remove the whitespace from both sides of a string
+        2.trimStart()
+            remove the whitespace only from the start of a string
+        3.trimEnd()
+            remove the whitespace fron end of a string
+        */
+
+        var trimText = 'Hello Word!     '
+       // elExample.textContent = trimText
+
+        /*EXTRACTING STRING CHARACTERS
+            1. charAt(position)
+            2. charCodeAt(position)
+            3. propriety acess []
+        */
+        //document.write(trimText.charCodeAt(0))
+       // elExample.textContent = trimText[0]
+
+        /*CONVERTING A STRING TO AN ARRAY
+            FOR IT WE SHOULD USE 'split()' method
+            split(",") -> split on spaces 
+            split(" ") -> siplit on commas
+            split("|") -> split on pipe
+            */
+        elExample.textContent = trimText.split()
+    </script>
+</body>
+</html>
